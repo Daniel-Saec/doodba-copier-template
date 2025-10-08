@@ -41,7 +41,7 @@ LATEST_PSQL_VER = ALL_PSQL_VERSIONS[-1]
 DBVER_PER_ODOO = {
     11.0: {
         "oldest": "10",  # Odoo supports 9.6, but that version is not supported by the backup service and is necessary to be able to perform all tests
-        "latest": "13",  # DB Authentication method limitation
+        "latest": "17",  # DB Authentication method limitation
     },
     12.0: {
         "oldest": "10",  # Odoo supports 9.6, but that version is not supported by the backup service and is necessary to be able to perform all tests
