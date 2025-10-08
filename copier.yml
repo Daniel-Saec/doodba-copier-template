@@ -396,10 +396,10 @@ postgres_version:
     "17": "17"
   validator: >-
     {% if postgres_version|int > 0 %} {% if (odoo_version >= 16.0 and
-    postgres_version|int < 12) or (odoo_version >= 14.0 and postgres_version|int < 10)
+    postgres_version|int < 10) or (odoo_version >= 14.0 and postgres_version|int < 10)
     %}  The postgres version is too low for the selected Odoo version. {% elif
-    odoo_version <= 12.0 and postgres_version|int > 13 %}  The postgres version is too
-    high for the selected Odoo version. {% elif odoo_version <= 14.0 and
+    odoo_version <= 10.0 and postgres_version|int > 13 %}  The postgres version is too
+    high for the selected Odoo version. {% elif odoo_version <= 10.0 and
     postgres_version|int > 16 %} The postgres version is too high for the selected Odoo
     version. {% endif %} {% endif %}
 
